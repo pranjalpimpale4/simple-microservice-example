@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 User=pranjalpimpale4
-WorkingDirectory=/home/pranjalpimpale4/simple-microservice-example/QuoteService/
-ExecStart=/home/pranjalpimpale4/simple-microservice-example/QuoteService/venv/bin/python /home/pranjalpimpale4/simple-microservice-example/QuoteService/main.py
+WorkingDirectory=/var/www/simple-microservice-example/QuoteService
+ExecStart=/bin/bash -c  '/var/www/simple-microservice-example/QuoteService/venv/bin/python /var/www/simple-microservice-example/QuoteService/main.py'
 Restart=always
 
 [Install]
