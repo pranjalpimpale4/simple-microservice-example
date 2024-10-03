@@ -3,9 +3,9 @@ Description=API Gateway Service Application
 After=network.target
 
 [Service]
-Environment="QUOTES_API=http://35.208.5.221"
+Environment="QUOTES_API=http://localhost:5000"
 User=pranjalpimpale4
-WorkingDirectory=/home/pranjalpimpale4/simple-microservice-example/ApiGateway/
+WorkingDirectory=var/www/pranjalpimpale4/simple-microservice-example/ApiGateway/
 ExecStart=npm run start
 Restart=always
 
